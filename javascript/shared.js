@@ -1,8 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
   initHamburger();
+  initNavScroll();
   initFaqAccordion();
   initScrollReveal();
 });
+
+/* === Navigation scroll state === */
+
+/**
+ * Toggles the navigation's solid background once the page is scrolled
+ * away from the top, so it stays legible over the light hero and content.
+ */
+function initNavScroll() {
+  const nav = document.querySelector('nav');
+  if (!nav) return;
+  const update = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+}
 
 /* === Mobile navigation (hamburger) === */
 

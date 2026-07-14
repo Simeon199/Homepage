@@ -64,10 +64,15 @@
   }
 
   .btn-primary,
-  .btn-secondary {
+  .btn-secondary,
+  .btn-accent {
     width: 100%;
     text-align: center;
     padding: 14px 0;
+  }
+
+  .eyebrow {
+    letter-spacing: 1.5px;
   }
 }
 

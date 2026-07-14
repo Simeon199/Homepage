@@ -22,26 +22,30 @@ section {
   margin-right: auto;
 }
 
-/* Hero */
+.section-left .eyebrow {
+  text-align: left;
+}
+
+/* Hero – heller, editorialer Cream→Sand-Verlauf (eigenständige Dachmarke) */
 .hero {
-  min-height: 100dvh;
+  min-height: 82vh;
   display: flex;
   align-items: center;
   padding-top: 140px;
-  background: linear-gradient(135deg, var(--teal) 0%, var(--dark) 100%);
+  background: linear-gradient(165deg, #FBF8F1 0%, #F1E4CE 100%);
   position: relative;
   overflow: hidden;
   text-align: center;
 }
 
-/* Dezenter Sand-Schimmer statt der Lime/Coral-Strahlen der Schwesterseite */
+/* Warmer Sand-Schimmer + dezenter Teal-Anklang als DNA-Andeutung */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(ellipse 50% 55% at 80% 20%, rgba(227, 183, 120, 0.22) 0%, transparent 70%),
-              radial-gradient(ellipse 45% 55% at 15% 90%, rgba(181, 212, 109, 0.14) 0%, transparent 70%);
+  background: radial-gradient(ellipse 55% 60% at 82% 15%, rgba(227, 183, 120, 0.35) 0%, transparent 68%),
+              radial-gradient(ellipse 50% 55% at 12% 92%, rgba(13, 92, 99, 0.08) 0%, transparent 70%);
 }
 
 .hero .container {
@@ -50,14 +54,14 @@ section {
 }
 
 .hero h1 {
-  color: white;
+  color: var(--ink);
 }
 
 .hero p {
   max-width: 640px;
   margin: 24px auto 32px;
-  color: rgba(255, 255, 255, 0.92);
-  font-weight: 300;
+  color: var(--mid);
+  font-weight: 400;
 }
 
 /* Value Proposition */
@@ -132,19 +136,10 @@ section {
   gap: 32px;
 }
 
-/* Testimonials */
+/* Testimonials – ruhige Cream-Sektion mit großem Sand-Anführungszeichen */
 .testimonials {
-  background: var(--teal);
+  background: var(--cream);
   text-align: center;
-}
-
-.testimonials h2 {
-  color: white;
-}
-
-/* Auf dunklem Grund die Akzentlinie hell/sand halten */
-.testimonials h2::after {
-  background: var(--sand);
 }
 
 /* Blog-Teaser */
@@ -167,13 +162,22 @@ section {
   max-width: 760px;
 }
 
-/* Kontakt */
+/* Kontakt – abschließendes Ink-CTA-Band mit Sand-Button */
 .contact {
-  background: white;
+  background: var(--ink);
   text-align: center;
 }
 
-.contact a {
-  color: var(--teal);
-  font-weight: 500;
+.contact .eyebrow {
+  color: var(--sand);
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact p {
+  max-width: 560px;
+  margin: 0 auto 32px;
+  color: rgba(255, 255, 255, 0.85);
 }

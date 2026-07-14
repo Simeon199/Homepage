@@ -3,9 +3,10 @@
   --lime: #B5D46D;
   --teal: #0D5C63;
   --cream: #F7F3EB;
-  --coral: #FF6B47;
   --dark: #1A1A2E;
   --mid: #3A3A5C;
+  /* Warmer Tiefton für dunkle Flächen – harmoniert mit Sand/Cream (statt des kühlen --dark) */
+  --ink: #1E2A2C;
   /* Eigenständige Signaturfarbe von Rein Campus */
   --sand: #E3B778;
   --sand-dark: #C99A56;
@@ -38,6 +39,13 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Sichtbarer Tastatur-Fokus (A11y) */
+:where(a, button, .faq-question):focus-visible {
+  outline: 3px solid var(--sand);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 ol,
@@ -87,6 +95,18 @@ p {
   font-size: 18px;
   line-height: 1.7;
   color: var(--mid);
+}
+
+/* Editorial-Kicker über den Überschriften (kleine, gesperrte Sand-Versalien) */
+.eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--sand-dark);
+  text-align: center;
+  margin-bottom: 14px;
 }
 
 .note {

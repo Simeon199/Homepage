@@ -1,6 +1,7 @@
 /* === Buttons === */
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-accent {
   display: inline-block;
   padding: 14px 32px;
   border-radius: var(--radius-pill);
@@ -17,6 +18,19 @@
   background: var(--lime);
   color: var(--dark);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Akzent-Button in der Sand-Signaturfarbe (Hero-CTA, dunkles Kontakt-Band) */
+.btn-accent {
+  background: var(--sand);
+  color: var(--ink);
+  box-shadow: 0 8px 24px rgba(30, 42, 44, 0.18);
+}
+
+.btn-accent:hover {
+  background: var(--sand-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(30, 42, 44, 0.26);
 }
 
 /* Sekundär nutzt die Sand-Signaturfarbe als Kontur */
@@ -70,23 +84,65 @@
   font-weight: 600;
 }
 
+.offering-card a::after {
+  content: " \2192";
+  transition: margin-left 0.2s;
+}
+
 .offering-card a:hover {
   color: var(--sand-dark);
 }
 
-/* === Kernwerte === */
+.offering-card a:hover::after {
+  margin-left: 4px;
+}
+
+/* Status-Badge (z. B. "Bald" auf noch nicht startbereiten Angeboten) */
+.badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 3px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--sand);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* === Kernwerte als Karten (Sand-Kante wie die Angebote) === */
 .value-item {
   width: 260px;
+  text-align: left;
+  background: white;
+  border-left: 4px solid var(--sand);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(26, 26, 46, 0.06);
 }
 
 /* === Testimonials === */
 .testimonial {
+  position: relative;
   max-width: 640px;
   margin: 0 auto;
+  padding-top: 48px;
+}
+
+.testimonial::before {
+  content: "\201C";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-heading);
+  font-size: 96px;
+  line-height: 1;
+  color: var(--sand);
 }
 
 .testimonial p {
-  color: white;
+  color: var(--ink);
   font-family: var(--font-heading);
   font-size: clamp(20px, 3vw, 26px);
   font-style: italic;
