@@ -34,8 +34,8 @@
     font-size: 16px;
   }
 
-  .angebot-kachel,
-  .kernwert {
+  .offering-card,
+  .value-item {
     width: 100%;
   }
 

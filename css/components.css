@@ -47,7 +47,7 @@
 }
 
 /* === Angebot-Kacheln: linke Sand-Akzentkante als Erkennungszeichen === */
-.angebot-kachel {
+.offering-card {
   background: var(--cream);
   border-radius: var(--radius);
   border-left: 4px solid var(--sand);
@@ -58,24 +58,24 @@
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.angebot-kachel:hover {
+.offering-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 28px rgba(26, 26, 46, 0.1);
 }
 
-.angebot-kachel a {
+.offering-card a {
   display: inline-block;
   margin-top: 12px;
   color: var(--teal);
   font-weight: 600;
 }
 
-.angebot-kachel a:hover {
+.offering-card a:hover {
   color: var(--sand-dark);
 }
 
 /* === Kernwerte === */
-.kernwert {
+.value-item {
   width: 260px;
 }
 

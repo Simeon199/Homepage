@@ -11,12 +11,12 @@ footer {
   gap: 32px;
 }
 
-.footer-kontakt p {
+.footer-contact p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
 }
 
-.footer-kontakt a {
+.footer-contact a {
   color: rgba(255, 255, 255, 0.9);
 }
 
