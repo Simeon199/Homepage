@@ -1,0 +1,91 @@
+/* ============================================
+   RESPONSIVE DESIGN - ORGANIZED BY BREAKPOINT
+   ============================================ */
+
+/* Desktop: ab 820px zeigt sich die volle Navigation */
+@media (min-width: 820px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+}
+
+/* Tablet: bis 819px greift das Hamburger-Menü */
+@media (max-width: 819px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+/* Mobile: bis 600px */
+@media (max-width: 600px) {
+  section {
+    padding: 56px 0;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .angebot-kachel,
+  .kernwert {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+/* Mobile Small: bis 400px */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+  }
+}
+
+/* Mobile Extra Small: bis 320px */
+@media (max-width: 320px) {
+  .nav-content {
+    height: 60px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .testimonial p {
+    font-size: 18px;
+  }
+}

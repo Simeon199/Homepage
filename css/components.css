@@ -1,0 +1,100 @@
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+  background: var(--lime);
+  color: var(--dark);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--teal);
+  border: 2px solid var(--teal);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-placeholder {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Angebot-Kacheln */
+.angebot-kachel {
+  background: var(--cream);
+  border-radius: 16px;
+  padding: 32px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.angebot-kachel:hover {
+  transform: translateY(-4px);
+}
+
+.angebot-kachel a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+/* Kernwerte */
+.kernwert {
+  width: 260px;
+}
+
+/* Testimonials */
+.testimonial {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial p {
+  color: white;
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* FAQ Akkordeon */
+.faq-item {
+  border-bottom: 1px solid rgba(26, 26, 46, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.faq-answer {
+  display: none;
+  padding-bottom: 20px;
+}
+
+.faq-item[aria-expanded="true"] .faq-answer,
+.faq-question[aria-expanded="true"] + .faq-answer {
+  display: block;
+}

@@ -1,0 +1,131 @@
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* Hero */
+.hero {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  padding-top: 140px;
+  background: linear-gradient(135deg, var(--teal) 0%, var(--dark) 100%);
+  text-align: center;
+}
+
+.hero h1 {
+  color: white;
+}
+
+.hero p {
+  max-width: 640px;
+  margin: 24px auto 32px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Value Proposition */
+.value-proposition {
+  text-align: center;
+  background: var(--cream);
+}
+
+.value-proposition p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Angebotsübersicht */
+.angebote {
+  background: white;
+}
+
+.angebote-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* Angebot-Detailbereiche */
+.angebot-detail {
+  background: var(--cream);
+}
+
+.angebot-detail:nth-of-type(even) {
+  background: white;
+}
+
+.angebot-detail .container {
+  max-width: 800px;
+}
+
+.angebot-detail ol {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Über uns */
+.ueber-uns {
+  background: white;
+  text-align: center;
+}
+
+.ueber-uns .container {
+  max-width: 760px;
+}
+
+/* Kernwerte */
+.kernwerte {
+  background: var(--cream);
+  text-align: center;
+}
+
+.kernwerte-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* Testimonials */
+.testimonials {
+  background: var(--teal);
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: white;
+}
+
+/* Blog-Teaser */
+.blog-teaser {
+  background: white;
+  text-align: center;
+}
+
+.blog-teaser p {
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+/* FAQ */
+.faq {
+  background: var(--cream);
+}
+
+.faq .container {
+  max-width: 760px;
+}
+
+/* Kontakt */
+.kontakt {
+  background: white;
+  text-align: center;
+}

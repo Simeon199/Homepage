@@ -1,0 +1,4 @@
+/* Platzhalter: lokale Webfont-Dateien (analog Course_Page/fonts) folgen, sobald Assets geliefert werden. */
+:root {
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}

@@ -1,11 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rein Campus</title>
+    <title>Rein Campus – Lerncoaching &amp; KI-Kurs für Schüler</title>
+    <meta name="description" content="Rein Campus begleitet Kinder und Jugendliche mit strukturiertem Lerncoaching und einem KI-Kurs zu mehr Sicherheit beim Lernen.">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media_queries.css">
 </head>
 <body>
-    <h1>Rein Campus</h1>
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="#main">Rein Campus</a>
+            </div>
+            <div class="nav-links">
+                <a href="#angebote">Angebote</a>
+                <a href="#lerncoaching">Lerncoaching</a>
+                <a href="#ki-kurs">KI-Kurs</a>
+                <a href="#ueber-uns">Über uns</a>
+                <a href="#blog-teaser">Blog</a>
+                <a href="#faq">FAQ</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- 1. Hero -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <h1>Lernen gelingt mit Sicherheit statt Druck</h1>
+                <p>
+                    Ein Ort für Kinder und Jugendliche, die beim Lernen wieder Vertrauen in sich selbst finden –
+                    strukturiert, ruhig und in einem verlässlichen Rahmen.
+                </p>
+                <a href="#angebote" class="btn-primary">Angebote entdecken</a>
+            </div>
+        </section>
+
+        <!-- 2. Value Proposition -->
+        <section class="value-proposition" id="value-proposition">
+            <div class="container">
+                <h2>Lernen und Entwicklung scheitern selten an fehlenden Fähigkeiten</h2>
+                <p>
+                    Viel häufiger fehlt es an Sicherheit. Derya Rein begleitet Kinder und Jugendliche mit einer
+                    strukturierten, ressourcenorientierten Herangehensweise – mit Respekt vor dem individuellen Tempo
+                    jedes Kindes.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. Angebotsübersicht -->
+        <section class="angebote" id="angebote">
+            <div class="container">
+                <h2>Unsere Angebote</h2>
+                <div class="angebote-grid">
+                    <article class="angebot-kachel">
+                        <h3>Lerncoaching für Schüler</h3>
+                        <p>Einzelcoaching zur Überwindung von Lernblockaden und Prüfungsangst.</p>
+                        <a href="#lerncoaching">Mehr erfahren</a>
+                    </article>
+                    <article class="angebot-kachel">
+                        <h3>KI-Kurs für Schüler</h3>
+                        <p>Neuer Kurs für Klasse 7–10 – Details folgen in Kürze.</p>
+                        <a href="#ki-kurs">Mehr erfahren</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Detailbereich Lerncoaching -->
+        <section class="angebot-detail" id="lerncoaching">
+            <div class="container">
+                <h2>Lerncoaching für Schüler</h2>
+                <p>
+                    Strukturiertes Einzelcoaching (60 Minuten, 1–2× wöchentlich) für Kinder und Jugendliche, die trotz
+                    vorhandener Fähigkeiten an Lernblockaden oder Prüfungsangst scheitern.
+                </p>
+                <h3>Ablauf</h3>
+                <ol>
+                    <li>Kostenloses Orientierungsgespräch</li>
+                    <li>Erste Sitzung: Wo steht Ihr Kind? Was sind die echten Blockaden?</li>
+                    <li>Regelmäßiges Coaching mit wechselnden Schwerpunkten (Lernorganisation, Prüfungsangst, Konzentration)</li>
+                    <li>Überprüfung und Anpassung nach 4–6 Wochen</li>
+                </ol>
+                <p class="hinweis">
+                    Die Kosten besprechen wir individuell im kostenlosen Orientierungsgespräch.
+                </p>
+                <!-- Platzhalter: Buchungs-Anbindung (Meetfy o.ä.) noch nicht final entschieden -->
+                <a href="#" class="btn-primary btn-placeholder" aria-disabled="true">Termin vereinbaren</a>
+            </div>
+        </section>
+
+        <!-- 5. Detailbereich KI-Kurs -->
+        <section class="angebot-detail" id="ki-kurs">
+            <div class="container">
+                <h2>KI-Kurs für Schüler</h2>
+                <p>
+                    Unser neuer Kurs für Schülerinnen und Schüler der Klasse 7–10 ist in Vorbereitung.
+                </p>
+                <!-- Platzhalter: ausführliche Kursinhalte folgen, sobald geliefert -->
+                <p class="hinweis">Ausführliche Inhalte folgen in Kürze.</p>
+            </div>
+        </section>
+
+        <!-- 6. Über uns / Gründer-Story -->
+        <section class="ueber-uns" id="ueber-uns">
+            <div class="container">
+                <h2>Über Derya Rein</h2>
+                <p>
+                    Derya Rein ist Gründerin des Rein Campus und arbeitet seit vielen Jahren mit Menschen in
+                    unterschiedlichen Lebensphasen. Ihre zentrale Beobachtung: Lernen und Entwicklung scheitern selten
+                    an fehlenden Fähigkeiten, sondern viel häufiger an fehlender Sicherheit. Ihre Arbeitsweise ist
+                    strukturiert, ruhig und ressourcenorientiert – mit klarem Blick auf das, was im Alltag tatsächlich
+                    umsetzbar ist.
+                </p>
+            </div>
+        </section>
+
+        <!-- 7. Kernwerte / Arbeitsweise -->
+        <section class="kernwerte" id="kernwerte">
+            <div class="container">
+                <h2>Unsere Arbeitsweise</h2>
+                <div class="kernwerte-grid">
+                    <div class="kernwert">
+                        <h3>Verlässlichkeit</h3>
+                        <p>Ein klarer, verlässlicher Rahmen statt Leistungsdruck.</p>
+                    </div>
+                    <div class="kernwert">
+                        <h3>Ressourcenorientierung</h3>
+                        <p>Fokus auf Stärken statt auf Defizite.</p>
+                    </div>
+                    <div class="kernwert">
+                        <h3>Individuelles Tempo</h3>
+                        <p>Respekt vor dem eigenen Lerntempo jedes Kindes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Social Proof -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2>Stimmen aus dem Rein Campus</h2>
+                <!-- Platzhalter: weitere Erfahrungsberichte folgen -->
+                <blockquote class="testimonial">
+                    <p>„Mein Kind weiß jetzt, wie es lernen soll.“</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- 9. Blog-Teaser -->
+        <section class="blog-teaser" id="blog-teaser">
+            <div class="container">
+                <h2>Aus dem Blog</h2>
+                <p>Regelmäßig neue Beiträge rund um Lernen, mentale Stärke und persönliche Entwicklung.</p>
+                <!-- Platzhalter: blog.html folgt in einer späteren Iteration -->
+                <a href="blog.html" class="btn-secondary btn-placeholder" aria-disabled="true">Zum Blog</a>
+            </div>
+        </section>
+
+        <!-- 10. FAQ -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2>Häufige Fragen</h2>
+                <!-- Platzhalter: FAQ-Einträge folgen -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Für wen eignet sich das Lerncoaching?</button>
+                    <div class="faq-answer">
+                        <p>Für Kinder und Jugendliche, die trotz vorhandener Fähigkeiten an Lernblockaden oder
+                        Prüfungsangst scheitern.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Kontakt / CTA -->
+        <section class="kontakt" id="kontakt">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <p>Rein Campus – Derya Rein</p>
+                <p>Hauptstraße 12, 79341 Kenzingen</p>
+                <p>Telefon: <a href="tel:+4976449294280">07644 9294280</a></p>
+                <p>E-Mail: <a href="mailto:info@rein-campus.de">info@rein-campus.de</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 12. Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-kontakt">
+                <p>Rein Campus – Derya Rein</p>
+                <p>Hauptstraße 12, 79341 Kenzingen</p>
+                <p>Telefon: <a href="tel:+4976449294280">07644 9294280</a></p>
+                <p>E-Mail: <a href="mailto:info@rein-campus.de">info@rein-campus.de</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="#angebote">Angebote</a>
+                <a href="#ueber-uns">Über uns</a>
+                <a href="blog.html">Blog</a>
+                <!-- Platzhalter: rechtliche Seiten folgen (Übernahme von rein-campus.de) -->
+                <a href="legal/impressum.html">Impressum</a>
+                <a href="legal/datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
