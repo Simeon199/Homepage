@@ -1,11 +1,19 @@
 :root {
+  /* Gemeinsame Farbfamilie mit dem Schwesterprojekt */
   --lime: #B5D46D;
   --teal: #0D5C63;
   --cream: #F7F3EB;
   --coral: #FF6B47;
   --dark: #1A1A2E;
   --mid: #3A3A5C;
+  /* Eigenständige Signaturfarbe von Rein Campus */
+  --sand: #E3B778;
+  --sand-dark: #C99A56;
   --accent: var(--teal);
+  /* Etwas zurückhaltendere Radien als beim Schwesterprojekt (ruhiger/strukturierter) */
+  --radius: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 100px;
 }
 
 * {
@@ -16,6 +24,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Anker-Offset für die fixierte Navigation (72px Höhe + etwas Luft) */
+  scroll-padding-top: 88px;
 }
 
 body {
@@ -35,31 +45,47 @@ ul {
   list-style-position: inside;
 }
 
+/* === Überschriften: Fraunces als Signatur === */
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  font-family: var(--font-heading);
+  line-height: 1.15;
   letter-spacing: -0.5px;
 }
 
 h1 {
-  font-size: clamp(32px, 6vw, 56px);
+  font-size: clamp(34px, 6vw, 60px);
+  font-weight: 600;
 }
 
 h2 {
-  font-size: clamp(26px, 4.5vw, 40px);
+  font-size: clamp(28px, 4.5vw, 42px);
+  font-weight: 600;
   text-align: center;
   margin-bottom: 24px;
 }
 
 h3 {
-  font-size: clamp(18px, 3vw, 24px);
+  font-size: clamp(19px, 3vw, 25px);
+  font-weight: 600;
   margin-bottom: 12px;
+}
+
+/* Wiederkehrendes Motiv: sandfarbene Akzentlinie unter jeder H2 */
+h2::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 3px;
+  background: var(--sand);
+  border-radius: 2px;
+  margin: 18px auto 0;
 }
 
 p {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--mid);
 }
 
@@ -79,10 +105,30 @@ p {
 
 ::-webkit-scrollbar-thumb {
   background: var(--teal);
-  border-radius: 100px;
+  border-radius: var(--radius-pill);
   border: 2px solid var(--dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--lime);
+  background: var(--sand);
+}
+
+/* === Ruhige Reveal-Animation (statt des energiegeladenen "Slam" der Schwesterseite) === */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

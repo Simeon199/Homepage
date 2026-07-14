@@ -1,51 +1,66 @@
-/* Buttons */
+/* === Buttons === */
 .btn-primary,
 .btn-secondary {
   display: inline-block;
   padding: 14px 32px;
-  border-radius: 100px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 600;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
+/* Primär bleibt Lime (gemeinsame DNA mit dem Schwesterprojekt) */
 .btn-primary {
   background: var(--lime);
   color: var(--dark);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* Sekundär nutzt die Sand-Signaturfarbe als Kontur */
 .btn-secondary {
   background: transparent;
   color: var(--teal);
-  border: 2px solid var(--teal);
+  border: 2px solid var(--sand);
 }
 
-.btn-primary:hover,
+.btn-secondary:hover {
+  background: var(--sand);
+  color: var(--dark);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
 .btn-secondary:hover {
   transform: translateY(-2px);
 }
 
 .btn-placeholder {
-  opacity: 0.6;
+  opacity: 0.55;
   cursor: not-allowed;
   pointer-events: none;
 }
 
-/* Angebot-Kacheln */
+/* === Angebot-Kacheln: linke Sand-Akzentkante als Erkennungszeichen === */
 .angebot-kachel {
   background: var(--cream);
-  border-radius: 16px;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--sand);
   padding: 32px;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.2s;
+  width: 320px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(26, 26, 46, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .angebot-kachel:hover {
   transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(26, 26, 46, 0.1);
 }
 
 .angebot-kachel a {
@@ -55,26 +70,32 @@
   font-weight: 600;
 }
 
-/* Kernwerte */
+.angebot-kachel a:hover {
+  color: var(--sand-dark);
+}
+
+/* === Kernwerte === */
 .kernwert {
   width: 260px;
 }
 
-/* Testimonials */
+/* === Testimonials === */
 .testimonial {
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
 .testimonial p {
   color: white;
-  font-size: 22px;
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 3vw, 26px);
   font-style: italic;
+  line-height: 1.5;
 }
 
-/* FAQ Akkordeon */
+/* === FAQ Akkordeon === */
 .faq-item {
-  border-bottom: 1px solid rgba(26, 26, 46, 0.1);
+  border-bottom: 1px solid rgba(26, 26, 46, 0.12);
 }
 
 .faq-question {
@@ -84,6 +105,7 @@
   border: none;
   cursor: pointer;
   padding: 20px 0;
+  font-family: var(--font-body);
   font-size: 18px;
   font-weight: 600;
   color: var(--dark);
@@ -94,7 +116,6 @@
   padding-bottom: 20px;
 }
 
-.faq-item[aria-expanded="true"] .faq-answer,
 .faq-question[aria-expanded="true"] + .faq-answer {
   display: block;
 }
