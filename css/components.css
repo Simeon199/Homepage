@@ -119,6 +119,55 @@
   border-radius: var(--radius);
   padding: 28px;
   box-shadow: 0 6px 20px rgba(26, 26, 46, 0.06);
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* === Ablauf-Timeline: nummerierte Schritte mit Verbindungslinie === */
+.timeline {
+  list-style: none;
+  counter-reset: step;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.timeline li {
+  position: relative;
+  counter-increment: step;
+  padding-left: 52px;
+  min-height: 36px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--mid);
+}
+
+.timeline li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 36px;
+  bottom: -28px;
+  border-left: 2px dotted var(--sand-dark);
 }
 
 /* === Testimonials === */

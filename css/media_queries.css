@@ -39,6 +39,17 @@
     width: 100%;
   }
 
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .about-photo-placeholder {
+    flex: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   .footer-content {
     flex-direction: column;
     text-align: center;
