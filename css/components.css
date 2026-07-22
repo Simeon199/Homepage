@@ -124,6 +124,71 @@
   hyphens: auto;
 }
 
+/* === Kennzahlen-Streifen (Lerncoaching-Eckdaten) === */
+.stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 600;
+  color: var(--teal);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--mid);
+}
+
+/* === Pain-Point-Kontrastkarten (Value Proposition) === */
+.pain-points-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.pain-point {
+  width: 320px;
+  text-align: left;
+  background: white;
+  border-left: 4px solid var(--teal);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(26, 26, 46, 0.06);
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.pain-point-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
+}
+
+.pain-point p {
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
 /* === Ablauf-Timeline: nummerierte Schritte mit Verbindungslinie === */
 .timeline {
   list-style: none;

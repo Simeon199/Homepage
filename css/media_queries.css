@@ -35,7 +35,8 @@
   }
 
   .offering-card,
-  .value-item {
+  .value-item,
+  .pain-point {
     width: 100%;
   }
 
