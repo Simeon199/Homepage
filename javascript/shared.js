@@ -9,6 +9,35 @@ function initPage() {
   initReveal(prefersReducedMotion);
   initCounters(prefersReducedMotion);
   if (!prefersReducedMotion) initParallax();
+  initHamburger();
+}
+
+/**
+ * Closes the mobile nav menu by removing the 'open' class from hamburger and menu.
+ */
+function closeMenu() {
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.querySelector('.menu');
+  if (!hamburger || !menu) return;
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  menu.classList.remove('open');
+}
+
+/**
+ * Wires up the hamburger button to toggle the mobile nav menu.
+ * Closes the menu again whenever a link inside it is clicked.
+ */
+function initHamburger() {
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.querySelector('.menu');
+  if (!hamburger || !menu) return;
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('open');
+    menu.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 }
 
 /**

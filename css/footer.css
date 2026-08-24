@@ -1,4 +1,4 @@
-.footer { background: var(--surface-dark); color: var(--black); padding: 54px 0 28px; }
+.footer { background: linear-gradient(135deg,var(--surface-dark) 0%,#DED0C2 50%,var(--surface-dark-2) 100%); color: var(--black); padding: 54px 0 28px; }
 
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 35px; }
 

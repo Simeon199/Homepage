@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width,initial-scale=1" name="viewport"/>
     <meta content="Rein Campus – Lernen, Zukunftskompetenzen, mentale Stärke und persönliche Entwicklung in Kenzingen und online." name="description"/>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <title>Startseite | Rein Campus</title>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/navigation.css" rel="stylesheet"/>
@@ -13,11 +14,8 @@
     <link href="css/media_queries.css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="topbar">
-      <div class="wrap"><span>REIN CAMPUS · Hauptstraße 12 · 79341 Kenzingen</span><span>07644 9294280 · info@rein-campus.de</span></div>
-    </div>
     <nav class="nav">
-      <div class="wrap navin"><a href="index.html"><img alt="Rein Campus" class="logo" src="assets/logo.png"/></a><div class="menu"><a href="lernen.html">Lernen</a><a href="ki.html">KI &amp; Zukunft</a><a href="gehirntraining.html">Gehirntraining</a><a href="ueber-uns.html">Über uns</a><a class="btn btn-primary" href="kontakt.html">Kontakt</a></div><a class="mobile btn btn-primary" href="kontakt.html">Kontakt</a></div>
+      <div class="wrap navin"><a href="index.html"><img alt="Rein Campus" class="logo" src="assets/logo.png"/></a><div class="menu"><a href="pages/lernen.html">Lernen</a><a href="pages/ki.html">KI &amp; Zukunft</a><a href="pages/gehirntraining.html">Gehirntraining</a><a href="pages/ueber-uns.html">Über uns</a><a class="btn btn-primary" href="pages/kontakt.html">Kontakt</a></div><button aria-expanded="false" aria-label="Menü öffnen" class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
     </nav>
 <header class="hero premium-hero">
       <div class="wrap hero-grid">
@@ -41,9 +39,9 @@
 <section class="path-section" id="wege">
       <div class="wrap">
         <div class="section-intro"><span class="eyebrow">Unser Kernangebot</span><h2>Lernbegleitung für Kinder &amp; Jugendliche.</h2><p>Der Großteil unserer Arbeit dreht sich um genau das: Schülern zu einem eigenständigen, funktionierenden Lernprozess verhelfen.</p></div>
-        <div class="path-grid"><a class="path-card path-orange path-featured" href="lernen.html"><span>01 · Eltern &amp; Schüler</span><h3>Mein Kind soll besser und selbstständiger lernen.</h3><p>Lernstrategien, Struktur, Selbstvertrauen und ein sinnvoller Umgang mit Leistungsdruck.</p><p class="small" style="color:#292929;opacity:.7;font-style:italic;margin-bottom:22px">„Es weiß oft nicht, wie es anfangen soll.“ · „Prüfungen erzeugen starken Druck.“ – kommt Ihnen das bekannt vor?</p><b>Lernangebote entdecken →</b></a></div>
+        <div class="path-grid"><a class="path-card path-orange path-featured" href="pages/lernen.html"><span>01 · Eltern &amp; Schüler</span><h3>Mein Kind soll besser und selbstständiger lernen.</h3><p>Lernstrategien, Struktur, Selbstvertrauen und ein sinnvoller Umgang mit Leistungsdruck.</p><p class="small" style="color:#292929;opacity:.7;font-style:italic;margin-bottom:22px">„Es weiß oft nicht, wie es anfangen soll.“ · „Prüfungen erzeugen starken Druck.“ – kommt Ihnen das bekannt vor?</p><b>Lernangebote entdecken →</b></a></div>
         <div class="section-intro" id="daneben" style="margin-top:56px;scroll-margin-top:110px"><span class="eyebrow">Daneben bieten wir</span><h2 style="font-size:clamp(1.6rem,2.5vw,2.4rem)">Auch für Erwachsene, Berufstätige und Senioren.</h2></div>
-        <div class="path-grid path-grid-secondary"><a class="path-card path-teal path-card-medium" href="ki.html"><span>02 · Schüler &amp; Erwachsene</span><h3>KI verstehen und sicher nutzen.</h3><p>Von guten Prompts bis zum kritischen Prüfen: verständlich, praktisch und verantwortungsvoll.</p><b>KI-Kompetenz aufbauen →</b></a><a class="path-card path-light path-card-small" href="gehirntraining.html"><span>03 · Geistig aktiv bleiben</span><h3>Das Gehirn in Bewegung halten.</h3><p>Gedächtnis, Konzentration, Kreativität in der Gruppe.</p><b>Mehr erfahren →</b></a></div>
+        <div class="path-grid path-grid-secondary"><a class="path-card path-teal path-card-medium" href="pages/ki.html"><span>02 · Schüler &amp; Erwachsene</span><h3>KI verstehen und sicher nutzen.</h3><p>Von guten Prompts bis zum kritischen Prüfen: verständlich, praktisch und verantwortungsvoll.</p><b>KI-Kompetenz aufbauen →</b></a><a class="path-card path-light path-card-small" href="pages/gehirntraining.html"><span>03 · Geistig aktiv bleiben</span><h3>Das Gehirn in Bewegung halten.</h3><p>Gedächtnis, Konzentration, Kreativität in der Gruppe.</p><b>Mehr erfahren →</b></a></div>
       </div>
     </section>
 <section class="premium-section soft">
@@ -55,25 +53,18 @@
         </div>
       </div>
     </section>
-<section class="newsletter-home">
-      <div class="wrap newsletter">
-        <div><span class="eyebrow dark-eye">Jede Woche ein Gedanke, der weiterhilft</span><h2>Der Rein Campus Newsletter</h2><p>Kurze Impulse zu Lernen, Gehirn, mentaler Stärke und KI – verständlich und direkt nutzbar.</p></div>
-        <form><input placeholder="Deine E-Mail-Adresse" type="email"/><button class="btn btn-dark" type="button">Impulse erhalten</button><div class="legal-note">Mit der Anmeldung akzeptierst du unsere Datenschutzhinweise. Abmeldung jederzeit möglich.</div>
-        </form>
-      </div>
-    </section>
     <section class="statement">
       <div class="wrap"><span class="eyebrow">Unsere Haltung</span><p class="megaquote reveal">Wissen ist wichtig.<br/><em>Zu wissen, wie man lernt, denkt und neue Werkzeuge nutzt, wird entscheidend.</em></p></div>
     </section>
 <section class="soft">
       <div class="wrap split editorial-split reveal-group">
-        <div><span class="eyebrow">Was sich verändert</span><h2>Die Welt lernt neu.<br/>Menschen müssen es auch.</h2><p class="largecopy">Schule, Beruf und Alltag verändern sich durch KI und permanente Informationsflut. Deshalb reicht reine Wissensvermittlung nicht mehr.</p><p>Rein Campus verbindet drei Fähigkeiten, die Menschen langfristig tragen: <strong>Lernen können, KI sinnvoll einsetzen und geistig beweglich bleiben.</strong></p><a class="text-link strong" href="ueber-uns.html">Unsere Haltung kennenlernen →</a></div>
+        <div><span class="eyebrow">Was sich verändert</span><h2>Die Welt lernt neu.<br/>Menschen müssen es auch.</h2><p class="largecopy">Schule, Beruf und Alltag verändern sich durch KI und permanente Informationsflut. Deshalb reicht reine Wissensvermittlung nicht mehr.</p><p>Rein Campus verbindet drei Fähigkeiten, die Menschen langfristig tragen: <strong>Lernen können, KI sinnvoll einsetzen und geistig beweglich bleiben.</strong></p><a class="text-link strong" href="pages/ueber-uns.html">Unsere Haltung kennenlernen →</a></div>
         <div class="image-stack"><img alt="Seminar im Rein Campus" src="assets/unbenannt-8.jpg"/><div class="image-note">Keine Nachhilfe 2.0.<br/><strong>Bildung, die weiterdenkt.</strong></div>
         </div>
       </div>
     </section>
 <section class="mint">
-      <div class="wrap split reveal-group"><img alt="Persönliche Begleitung im Rein Campus" src="assets/unbenannt-3.jpg"/><div><span class="eyebrow">Mensch vor Methode</span><h2>Persönlich. Klar. Praxisnah.</h2><p class="largecopy">Keine leeren Versprechen und keine Patentrezepte. Wir erklären Zusammenhänge, vermitteln Werkzeuge und schaffen Raum zum Ausprobieren.</p><div class="mini-proof"><span>Praxis statt Theorie</span><span>Verstehen statt Druck</span><span>Werkzeuge statt Abhängigkeit</span></div><a class="btn btn-dark" href="ueber-uns.html">Menschen &amp; Haltung</a></div>
+      <div class="wrap split reveal-group"><img alt="Persönliche Begleitung im Rein Campus" src="assets/unbenannt-3.jpg"/><div><span class="eyebrow">Mensch vor Methode</span><h2>Persönlich. Klar. Praxisnah.</h2><p class="largecopy">Keine leeren Versprechen und keine Patentrezepte. Wir erklären Zusammenhänge, vermitteln Werkzeuge und schaffen Raum zum Ausprobieren.</p><div class="mini-proof"><span>Praxis statt Theorie</span><span>Verstehen statt Druck</span><span>Werkzeuge statt Abhängigkeit</span></div><a class="btn btn-dark" href="pages/ueber-uns.html">Menschen &amp; Haltung</a></div>
       </div>
     </section>
 <section>
@@ -85,10 +76,10 @@
     <footer class="footer">
       <div class="wrap">
         <div class="footer-grid">
-          <div><img alt="Rein Campus" class="logo" src="assets/logo.png"/><p class="small">Lernen. Denken. Zukunft gestalten.</p></div>
-          <div><h3>Rein Campus</h3><p><a href="lernen.html">Lernen</a><br/><a href="ki.html">KI &amp; Zukunft</a><br/><a href="gehirntraining.html">Gehirntraining</a></p></div>
-          <div><h3>Kontakt</h3><p>Hauptstraße 12<br/>79341 Kenzingen<br/>07644 9294280<br/>info@rein-campus.de</p></div>
-        </div><hr style="border:0;border-top:1px solid #c3c1bd;margin:35px 0 20px"/><div class="small">© <span data-year=""></span> Rein Campus · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div>
+          <div><a href="index.html"><img alt="Rein Campus" class="logo" src="assets/logo.png"/></a><p class="small">Lernen. Denken. Zukunft gestalten.</p></div>
+          <div><h3><a href="index.html">Rein Campus</a></h3><p><a href="pages/lernen.html">Lernen</a><br/><a href="pages/ki.html">KI &amp; Zukunft</a><br/><a href="pages/gehirntraining.html">Gehirntraining</a></p></div>
+          <div><h3>Kontakt</h3><p>Hauptstraße 12<br/>79341 Kenzingen<br/>07644 9294280<br/><a href="mailto:info@rein-campus.de">info@rein-campus.de</a></p></div>
+        </div><hr style="border:0;border-top:1px solid #c3c1bd;margin:35px 0 20px"/><div class="small">© <span data-year=""></span> Rein Campus · <a href="legal/impressum.html">Impressum</a> · <a href="legal/datenschutz.html">Datenschutz</a></div>
       </div>
     </footer>
     <script src="javascript/shared.js"></script>
