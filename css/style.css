@@ -1,154 +1,53 @@
-:root {
-  /* Gemeinsame Farbfamilie mit dem Schwesterprojekt */
-  --lime: #B5D46D;
-  --teal: #0D5C63;
-  --cream: #F7F3EB;
-  --dark: #1A1A2E;
-  --mid: #3A3A5C;
-  /* Warmer Tiefton für dunkle Flächen – harmoniert mit Sand/Cream (statt des kühlen --dark) */
-  --ink: #1E2A2C;
-  /* Eigenständige Signaturfarbe von Rein Campus */
-  --sand: #E3B778;
-  --sand-dark: #C99A56;
-  --accent: var(--teal);
-  /* Etwas zurückhaltendere Radien als beim Schwesterprojekt (ruhiger/strukturierter) */
-  --radius: 14px;
-  --radius-lg: 20px;
-  --radius-pill: 100px;
-}
+:root { --orange: #E59560; --teal: #3DB4B0; --black: #292929; --white: #fff; --cream: #FFF8F2; --mint: #EAF8F7; --gray: #666; --line: #e8e8e8; --shadow: 0 18px 50px rgba(0,0,0,.09); --r: 24px; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-  /* Anker-Offset für die fixierte Navigation (72px Höhe + etwas Luft) */
-  scroll-padding-top: 88px;
-}
+html { scroll-behavior: smooth; }
 
-body {
-  font-family: var(--font-body);
-  background: var(--cream);
-  color: var(--dark);
-  overflow-x: hidden;
-}
+body { margin: 0; font-family: Inter,Arial,sans-serif; color: var(--black); background: #fff; line-height: 1.55; }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+h1, h2, h3, .brand { font-family: 'Arial Narrow',Impact,sans-serif; letter-spacing: .02em; }
 
-/* Sichtbarer Tastatur-Fokus (A11y) */
-:where(a, button, .faq-question):focus-visible {
-  outline: 3px solid var(--sand);
-  outline-offset: 3px;
-  border-radius: 4px;
-}
+h1 { font-size: clamp(3rem,7vw,6.8rem); line-height: .93; margin: 0 0 24px; text-transform: uppercase; }
 
-ol,
-ul {
-  list-style-position: inside;
-}
+h2 { font-size: clamp(2.1rem,4vw,4rem); line-height: 1; margin: 0 0 18px; text-transform: uppercase; }
 
-/* === Überschriften: Fraunces als Signatur === */
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading);
-  line-height: 1.15;
-  letter-spacing: -0.5px;
-}
+h3 { font-size: 1.6rem; margin: 0 0 10px; }
 
-h1 {
-  font-size: clamp(34px, 6vw, 60px);
-  font-weight: 600;
-}
+p { margin: 0 0 16px; }
 
-h2 {
-  font-size: clamp(28px, 4.5vw, 42px);
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 24px;
-}
+.wrap { width: min(1180px,calc(100% - 40px)); margin: auto; }
 
-h3 {
-  font-size: clamp(19px, 3vw, 25px);
-  font-weight: 600;
-  margin-bottom: 12px;
-}
+/* Premium homepage refinement */
+:root { --charcoal: #292929; --offwhite: #F7F7F5; --surface-dark: #D8D6D2; --muted-on-dark: #5b5b57; }
 
-/* Wiederkehrendes Motiv: sandfarbene Akzentlinie unter jeder H2 */
-h2::after {
-  content: "";
-  display: block;
-  width: 52px;
-  height: 3px;
-  background: var(--sand);
-  border-radius: 2px;
-  margin: 18px auto 0;
-}
+body { background: var(--offwhite); }
 
-p {
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--mid);
-}
+/* Final homepage polish */
+body { font-family: Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color: #292929; }
 
-/* Editorial-Kicker über den Überschriften (kleine, gesperrte Sand-Versalien) */
-.eyebrow {
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--sand-dark);
-  text-align: center;
-  margin-bottom: 14px;
-}
+/* Global rhythm */
+body { line-height: 1.65; }
 
-.note {
-  font-size: 15px;
-  font-style: italic;
-  color: var(--mid);
-}
+p { margin: 0 0 18px; line-height: 1.68; text-wrap: pretty; }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
+h1, h2, h3 { overflow-wrap: break-word; text-wrap: balance; }
 
-::-webkit-scrollbar-track {
-  background: var(--dark);
-}
+h1 { line-height: 1.01; margin-bottom: 30px; }
 
-::-webkit-scrollbar-thumb {
-  background: var(--teal);
-  border-radius: var(--radius-pill);
-  border: 2px solid var(--dark);
-}
+h2 { line-height: 1.09; margin-bottom: 24px; }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--sand);
-}
+h3 { line-height: 1.16; margin-bottom: 14px; }
 
-/* === Ruhige Reveal-Animation (statt des energiegeladenen "Slam" der Schwesterseite) === */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-}
+/* Release Candidate 10 — editorial QA */
+html { scroll-behavior: smooth; }
 
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
+body { overflow-x: hidden; }
 
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-}
+h1, h2, h3, p, li { overflow-wrap: break-word; }
+
+h1, h2, h3 { text-wrap: balance; }
+
+/* Correct German hyphenation instead of arbitrary mid-word breaks */
+h1, h2, h3 { hyphens: auto; -webkit-hyphens: auto; }
+
