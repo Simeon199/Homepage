@@ -100,6 +100,8 @@
   .btn { width: 100%; padding: 14px 18px; }
   .text-link { width: auto; }
   .footer-grid { gap: 30px; }
+  .legal-content h2 { gap: 10px; margin: 36px 0 14px; padding-top: 24px; }
+  .legal-content .legal-num { width: 28px; height: 28px; font-size: .85rem; }
 }
 
 @media(max-width:1180px) {
