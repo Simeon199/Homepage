@@ -252,7 +252,7 @@ section { padding: 96px 0; }
 
 .subhero-media img, .editorial-split > img { display: block; width: 100%; max-width: 100%; }
 
-.subhero h1, .editorial-split h2 { max-width: 100%; overflow-wrap: anywhere; word-break: normal; }
+.subhero h1, .editorial-split h2 { max-width: 100%; word-break: normal; }
 
 /* About page: keep copy and photography clearly separated */
 body:has(.active-nav[href="ueber-uns.html"]) .subhero-grid { grid-template-columns: minmax(0,1.08fr) minmax(360px,.92fr); column-gap: 84px; }

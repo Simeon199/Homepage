@@ -53,6 +53,11 @@
 
 .cta p { color: var(--muted-on-dark); max-width: 700px; }
 
+/* Without this, the button is a shrinkable flex item and gets squeezed
+   below its content size whenever the row layout is active (>900px),
+   wrapping its label onto two lines with almost no visible padding. */
+.cta .btn { flex-shrink: 0; }
+
 .checklist { list-style: none; padding: 0; }
 
 .checklist li { padding: 8px 0 8px 28px; position: relative; }
@@ -183,7 +188,7 @@
 .hero-grid>*, .subhero-grid>*, .split>*, .content-grid>*, .intro-band .wrap>*, .trust-grid>*, .path-grid>*, .value-grid>*, .compare-grid>*, .process-row>*, .audience-grid>*, .contact-cards>*, .form-grid>* { min-width: 0; }
 
 /* Headline line separation */
-.hero h1 .accent, .premium-hero h1 .accent, .subhero h1 .accent { display: inline-block; margin-top: .08em; }
+.hero h1 .accent, .premium-hero h1 .accent, .subhero h1 .accent { display: block; margin-top: .08em; }
 
 .badge { left: 18px; bottom: 18px; max-width: calc(100% - 36px); }
 
@@ -246,7 +251,7 @@
 
 .sub-cta { padding-bottom: 96px; }
 
-.subhero h1 .accent { display: inline-block; margin-top: .08em; }
+.subhero h1 .accent { display: block; margin-top: .08em; }
 
 .section-intro h2, .editorial-split h2, .cta h2 { line-height: 1.08; }
 
