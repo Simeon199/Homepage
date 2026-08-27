@@ -1,4 +1,4 @@
-.btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 999px; text-decoration: none; font-weight: 800; border: 2px solid transparent; transition: transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s cubic-bezier(.34,1.56,.64,1),filter .2s; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 999px; text-decoration: none; cursor: pointer; font-weight: 800; border: 2px solid transparent; transition: transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s cubic-bezier(.34,1.56,.64,1),filter .2s; }
 
 .btn-primary { position: relative; overflow: hidden; background: var(--orange); color: var(--black); }
 
@@ -11,6 +11,8 @@
 .btn-dark { background: var(--black); color: #fff; }
 
 .btn-light { background: #fff; color: var(--black); border-color: #ddd; }
+
+/* .btn-disabled { opacity: .55; cursor: not-allowed; pointer-events: none; } */
 
 .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: .8rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); background: rgba(61,180,176,.12); border-radius: 999px; padding: 8px 16px; margin-bottom: 18px; }
 
@@ -57,6 +59,16 @@
    below its content size whenever the row layout is active (>900px),
    wrapping its label onto two lines with almost no visible padding. */
 .cta .btn { flex-shrink: 0; }
+
+/* Newsletter CTA: reuses the .cta/.premium-cta shape but swaps the muted
+   grey panel for the same warm gradient already used on .path-orange, so
+   the signup box reads as a highlight instead of blending in with the
+   other, more neutral CTA panel ("Orientierung anfragen"). */
+.cta-highlight { background: linear-gradient(135deg,#FFC79A 0%,var(--orange) 100%); }
+
+.cta-highlight p { color: var(--charcoal); opacity: .82; }
+
+.cta.cta-highlight .eyebrow, .cta.cta-highlight .section-label { color: var(--teal); background: rgba(255,255,255,.55); }
 
 .checklist { list-style: none; padding: 0; }
 
